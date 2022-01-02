@@ -1,3 +1,10 @@
+let player = {
+  name: "Chris",
+  chips: 145,
+  sayHello: function () {
+    console.log("Hello")
+  }
+}
 
 let cards = []; 
 let sum = 0;
@@ -7,15 +14,9 @@ let message = "";
 let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardEl = document.getElementById("card-el");
-
-let player = {
-  name: "Chris",
-  chips: 145
-}
-
-
-
 let playerEl = document.getElementById("player-el")
+
+
 playerEl.textContent = player.name + ": $" + player.chips
 
 function getRandomCard() {
@@ -223,3 +224,118 @@ function newCard() {
 // function recommendMovie() {
 //   console.log("Hey, check out this new film we think you will like!")
 // }
+// let course = {
+//   title: "Learn CSS Grid for free",
+//   lesson: 16,
+//   creator: "Per Harald Boren",
+//   length: 63,
+//   level: 2,
+//   isFree: true,
+//   tags:["html", "css"]
+// }
+
+// console.log(course.tags)
+
+// let castleListing = {
+//   title: "My Castle",
+//   isAvailable: true,
+//   cost: 100,
+//   features: ["Rual","Medievil"]
+// }
+
+// console.log(castleListing.title)
+// console.log(castleListing.features)
+
+// Create a person object that contains three keys: name, age and country
+// User yourself as an example to set the values for name, age and country
+
+// Create a function, logData(), that uses the person object to create a
+// string in the following format:
+// "Per is 35 years old and lives in Norway"
+// Cal the logData() function to verify that it works
+
+// let person = {
+//   name: "Chris",
+//   age: 35,
+//   country: "Scotland"
+// }
+
+// function logData() {
+//   console.log(person.name + " is " + person.age + " and lives in " + person.country)
+// }
+
+// logData()
+
+// let age = 67
+
+// // less than 6 yrs old -> free
+// // 6 to 17 yrs old -> child discount
+// // 18 to 26 yrs old -> student discount
+// // 27 to 66 years old -> full price
+// // over 66 yrs old - senior citizen discount
+
+// if(age < 6){
+//   console.log("Free")
+// } else if (age >=6 && age <=17){
+//   console.log("Child discount")
+// } else if (age >=18 && age<= 26){
+//   console.log("Student price")
+// } else if (age >=27 && age <= 66){
+//   console.log("Full price")
+// } else {
+//   console.log("Senior citizen price")
+// }
+
+// let largeCountries = ["China","India","USA","Indonesia","Pakistan"]
+// console.log("The 5 largest countries in the world are:")
+// for (let index = 0; index < largeCountries.length; index++) {
+//    console.log(largeCountries[index])
+// }
+
+// let largeCountries = ["Tuvalu","India","USA","Indonesia","Monaco"]
+
+// largeCountries.shift()
+// largeCountries.pop()
+// largeCountries.push("Pakistan")
+// largeCountries.unshift("China")
+// console.log(largeCountries)
+
+// let dayOfMonth = 13
+// let weekday = "Thursday"
+
+// if (dayOfMonth === 13 && weekday === "Friday") {
+//   console.log("It's Friday the 13th")
+// } else {
+//   console.log("It's not Friday the 13th")
+// }
+
+// let hands = ["rock", "paper", "scissors"]
+
+// // Create a function that returns a random item from the array
+
+// function returnRandomHand() {
+//   let randonIndex = Math.floor(Math.random() * 3)
+//   return hands[randonIndex]
+// }
+
+// console.log(returnRandomHand())
+
+// Create a function that puts the apples onto the appleShelf
+// and the oranges onto the orangeShelf. Use a for loop
+// a conditional statement, and the textContent property
+
+// let fruit = ["apple", "orange", "apple", "apple", "orange"]
+// let appleShelf = document.getElementById("apple-shelf")
+// let orangeShelf = document.getElementById("orange-shelf")
+
+// function fruitDecider() {
+//   for (let i = 0; i < fruit.length; i++) {
+//     if (fruit[i] === "apple") {
+//       appleShelf.textContent += " " + fruit[i] + " ";
+//     } else {
+//       orangeShelf.textContent += " " + fruit[i] + " ";
+//     }
+//   }
+// }
+
+// fruitDecider();
